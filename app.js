@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const { connection } = require("./configs/db");
 const { userModel } = require("./models/user.model");
-// const { userData } = require("./models/user.data");
 const app = express();
 
 app.use(cors());
@@ -78,12 +77,12 @@ app.post("/books", async (req, res) => {
   }
 });
 
-app.listen(8080, async () => {
+app.listen(4000, async () => {
   try {
     await connection;
-    console.log("connected with db");
+    console.log("Connected with Database");
   } catch (error) {
     console.log(error);
   }
-  console.log("server is running at PORT 8080");
+  console.log("Server is Running at PORT 4000");
 });

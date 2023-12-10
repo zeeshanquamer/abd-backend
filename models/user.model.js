@@ -93,15 +93,15 @@ userSchema.post("save", async function (doc) {
               <div class="message">Thanks for Purchasing</div>
               <div class="body">
                   <p>Dear ${doc.name},</p>
-                  <p>You have successfully Purchased <span class="highlight">${doc.title}</span> of Author <span class="highlight"> ${doc.author} </span>. We
+                  <p>You have successfully Purchased <span class="highlight">${doc.title}</span> of Author <span class="highlight"> ${doc.author} </span>.</p><p> We
                       are excited to have you as our Valuable Customer!</p>
                   <p>Shipping Address : ${doc.address}
                   </p>
-                  <p>Please Confirm Your Address We Will contact you shortly on Your Contact Number:  ${doc.phone}</p>
+                <p class="support">Please Confirm Your Address </p><p>We will Contact you shortly on Your Contact Number:  +91 ${doc.phone}</p>
                   <a class="cta" href="https://abd-online.vercel.app/">Go to Store</a>
               </div>
               <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
-                      href="mailto:info@abd-online.vercel.app">info@abd-online.vercel.app</a>. We are here to help!</div>
+                      href="mailto:zeeshan.report@gmail.com">zeeshan.report@gmail.com</a>. We are here to help!</div>
           </div>
       </body>
       
